@@ -1,5 +1,6 @@
 node_modules
 dist
+ignorar
 .DS_Store
 .env
 .vite
