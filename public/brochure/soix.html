@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOIX Solutions — Brochure Corporativo 2026 (Formato Carta)</title>
+  
+  <!-- Tipografías Oficiales de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Hoja de Estilos Principal -->
+  <link rel="stylesheet" href="css/brochure.css">
+</head>
+<body>
+
+  <!-- BARRA SUPERIOR DE CONTROL E IMPRESIÓN -->
+  <header class="brochure-toolbar">
+    <div class="brand-group">
+      <img src="Logos%20SOIX/soix_logo_dark_cropped.png" alt="SOIX Solutions Logo" class="brand-logo" onerror="this.style.display='none'">
+      <div class="title">SOIX <span>SOLUTIONS</span> · Brochure Corporativo 2026</div>
+      <span class="badge-format">Hoja Carta (8.5 × 11 in)</span>
+    </div>
+    <div class="actions">
+      <select id="pageSelector" class="toolbar-btn btn-ghost" onchange="scrollToPage(this.value)">
+        <option value="1">Pág 01 · Portada</option>
+        <option value="2">Pág 02 · Quiénes Somos</option>
+        <option value="3">Pág 03 · Diferenciadores</option>
+        <option value="4">Pág 04 · Infraestructura Eléctrica</option>
+        <option value="5">Pág 05 · Mantenimiento Industrial</option>
+        <option value="6">Pág 06 · Automatización y Control</option>
+        <option value="7">Pág 07 · Construcción</option>
+        <option value="8">Pág 08 · Ingeniería y Proyectos</option>
+        <option value="9">Pág 09 · Sectores</option>
+        <option value="10">Pág 10 · Casos de Éxito</option>
+        <option value="11">Pág 11 · Clientes y Alianzas</option>
+        <option value="12">Pág 12 · Anexo y Contacto</option>
+      </select>
+      <button class="toolbar-btn btn-primary" onclick="window.print()">
+        🖨 Guardar / Imprimir PDF (Carta)
+      </button>
+    </div>
+  </header>
+
+  <main class="brochure-container" id="brochure">
+
+    <!-- ====================================================================
+         PÁGINA 1: PORTADA CORPORATIVA
+         ==================================================================== -->
+    <article class="sheet sheet-portada" id="page-1" data-page="1">
+      <div class="edge-accent" aria-hidden="true"></div>
+      <div class="portada-backdrop" aria-hidden="true"></div>
+      <div class="portada-rings" aria-hidden="true"></div>
+
+      <div class="portada-photo-frame">
+        <img src="GALERIA/portada.png" alt="Ingeniería y Subestaciones Eléctricas SOIX" onerror="this.src='GALERIA/SeccElectrica/San%20agust%C3%ADn/San%20agustin9_web.jpg'">
+      </div>
+
+      <div class="sheet-content">
+        <div style="font-size: 8.5pt; font-weight: 800; letter-spacing: 0.25em; text-transform: uppercase; color: var(--navy); display: flex; align-items: center; gap: 8px;">
+          <span style="width: 24px; height: 3px; background: var(--lime);"></span>
+          BROCHURE CORPORATIVO 2026
+        </div>
+
+        <div class="portada-logo-box">
+          <img src="Logos%20SOIX/LOGO%20SOIX%20PNG.png" alt="SOIX Solutions">
+        </div>
+
+        <div class="portada-rule"></div>
+
+        <h1 class="portada-title">
+          Ingeniería eléctrica e industrial que mantiene su operación en marcha.
+        </h1>
+
+        <div class="portada-services">
+          INFRAESTRUCTURA ELÉCTRICA <span class="bullet">·</span>
+          MANTENIMIENTO INDUSTRIAL <span class="bullet">·</span>
+          AUTOMATIZACIÓN <span class="bullet">·</span>
+          CONSTRUCCIÓN
+        </div>
+
+        <div class="sheet-footer" style="margin-top: auto; padding-top: 0.15in; border-top: 1px solid var(--border-line);">
+          <div>XICOTEPEC DE JUÁREZ, PUEBLA · MÉXICO</div>
+          <div class="page-number"><span style="color: var(--blue);">soixsolutions.com</span> · 01</div>
+        </div>
+      </div>
+    </article>
+
+
+    <!-- ====================================================================
+         PÁGINA 2: QUIÉNES SOMOS & PROPUESTA DE VALOR
+         ==================================================================== -->
+    <article class="sheet" id="page-2" data-page="2">
+      <div class="edge-accent" aria-hidden="true"></div>
+      <div class="sheet-content">
+        
+        <header class="sheet-header">
+          <div class="kicker">01 · QUIÉNES SOMOS</div>
+          <h2>Sobre SOIX Solutions</h2>
+          <p class="subtitle">Soluciones de ingeniería, construcción y mantenimiento industrial de alta confiabilidad.</p>
+        </header>
+
+        <div style="display: grid; grid-template-columns: 1.4fr 1fr; gap: 0.18in; margin-bottom: 0.15in;">
+          <div>
+            <p style="font-size: 8.7pt; line-height: 1.5; color: var(--ink-secondary); margin: 0 0 0.1in;">
+              <strong style="color: var(--navy);">SOIX Solutions</strong> es una empresa mexicana fundada en <strong>2020</strong> con sede en Xicotepec de Juárez, Puebla. Desarrollamos proyectos integrales de infraestructura eléctrica y electromecánica para la industria manufacturera, agroindustria, el sector carretero e infraestructura pública, desde la planeación técnica y memorias de cálculo hasta la puesta en marcha.
+            </p>
+            <p style="font-size: 8.7pt; line-height: 1.5; color: var(--ink-secondary); margin: 0;">
+              Combinamos personal técnico certificado (DC-3 STPS), equipamiento propio de diagnóstico y estricto apego normativo (NOM-001-SEDE, NOM-022-STPS) para garantizar operaciones seguras, continuas y rentables.
+            </p>
+          </div>
+          
+          <div class="photo-card" style="height: auto;">
+            <img src="GALERIA/SeccElectrica/San%20agust%C3%ADn/San%20agust%C3%ADn_12.jpg" alt="Personal técnico SOIX" style="height: 1.15in;">
+            <div class="caption">Supervisión y control técnico en sitio</div>
+          </div>
+        </div>
+
+        <!-- Banner de Experiencia -->
+        <div style="background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%); color: #fff; padding: 0.14in 0.18in; border-radius: var(--radius-md); margin-bottom: 0.18in; display: flex; align-items: center; justify-content: space-between; position: relative; overflow: hidden;">
+          <div style="position: absolute; right: -0.2in; top: -0.3in; width: 1.5in; height: 1.5in; border-radius: 50%; border: 1px solid rgba(8, 160, 223, 0.3); pointer-events: none;"></div>
+          <div>
+            <div style="font-family: 'Montserrat', sans-serif; font-size: 7.5pt; font-weight: 800; letter-spacing: 0.15em; color: var(--lime); text-transform: uppercase;">TRAYECTORIA COMPROBADA</div>
+            <div style="font-size: 9.5pt; font-weight: 700; color: #eaf3f8; margin-top: 0.02in;">Más de 6 años manteniendo en operación ininterrumpida la infraestructura de nuestros clientes.</div>
+          </div>
+          <div style="font-family: 'Montserrat', sans-serif; font-size: 26pt; font-weight: 900; color: #fff; margin-left: 0.2in; white-space: nowrap;">+6 AÑOS</div>
+        </div>
+
+        <!-- Cifras Clave -->
+        <div style="font-family: 'Montserrat', sans-serif; font-size: 8pt; font-weight: 800; letter-spacing: 0.15em; color: var(--navy); text-transform: uppercase; margin-bottom: 0.08in;">
+          NUESTRAS CIFRAS DE IMPACTO
+        </div>
+
+        <div class="card-grid-3" style="gap: 0.1in;">
+          <div class="metric-box">
+            <div class="number">2020</div>
+            <div class="label">Año de Inicio</div>
+            <div class="detail">Operaciones formales</div>
+          </div>
+          <div class="metric-box accent-lime">
+            <div class="number">50+</div>
+            <div class="label">Proyectos</div>
+            <div class="detail">Servicios concluidos</div>
+          </div>
+          <div class="metric-box">
+            <div class="number">25 kV</div>
+            <div class="label">Media Tensión</div>
+            <div class="detail">Líneas y subestaciones</div>
+          </div>
+          <div class="metric-box accent-lime">
+            <div class="number">300 kVA</div>
+            <div class="label">Transformadores</div>
+            <div class="detail">Capacidad instalada</div>
+          </div>
+          <div class="metric-box">
+            <div class="number">25+</div>
+            <div class="label">Especialistas</div>
+            <div class="detail">Técnicos certificados</div>
+          </div>
+          <div class="metric-box accent-lime">
+            <div class="number">6</div>
+            <div class="label">Estados</div>
+            <div class="detail">Cobertura operativa</div>
+          </div>
+        </div>
+
+        <footer class="sheet-footer">
+          <div>SOIX SOLUTIONS · INGENIERÍA ELÉCTRICA E INDUSTRIAL</div>
+          <div class="page-number"><span style="color: var(--blue);">soixsolutions.com</span> · 02</div>
+        </footer>
+      </div>
+    </article>
+
+
+    <!-- ====================================================================
+         PÁGINA 3: LO QUE NOS DIFERENCIA
+         ==================================================================== -->
+    <article class="sheet" id="page-3" data-page="3">
+      <div class="edge-accent" aria-hidden="true"></div>
+      <div class="sheet-content">
+        
+        <header class="sheet-header">
+          <div class="kicker">02 · LO QUE NOS DIFERENCIA</div>
+          <h2>Cinco razones para elegirnos</h2>
+          <p class="subtitle">La disciplina operativa por la que nuestros clientes confían año con año en nosotros.</p>
+        </header>
+
+        <div style="display: flex; flex-direction: column; gap: 0.09in; margin-bottom: 0.16in;">
+          
+          <div class="info-card" style="display: flex; gap: 0.12in; align-items: flex-start;">
+            <div style="font-family: 'Montserrat', sans-serif; font-size: 16pt; font-weight: 900; color: var(--blue); min-width: 0.32in; line-height: 1;">01</div>
+            <div>
+              <h4>Atención inmediata de emergencias 24/7</h4>
+              <p>Respuesta técnica rápida y movilización de cuadrillas ante contingencias en media tensión (25 kV) y equipos críticos de producción. Casos de éxito comprobados en CIPSA, La Laja y Egis.</p>
+            </div>
+          </div>
+
+          <div class="info-card accent-lime" style="display: flex; gap: 0.12in; align-items: flex-start;">
+            <div style="font-family: 'Montserrat', sans-serif; font-size: 16pt; font-weight: 900; color: var(--lime); min-width: 0.32in; line-height: 1;">02</div>
+            <div>
+              <h4>Del diagnóstico a la ejecución (Solución Llave en Mano)</h4>
+              <p>Un solo interlocutor técnico y responsable absoluto: ingeniería básica, memorias de cálculo, suministro de equipos con garantía, montaje, supervisión y puesta en marcha sin intermediarios.</p>
+            </div>
+          </div>
+
+          <div class="info-card" style="display: flex; gap: 0.12in; align-items: flex-start;">
+            <div style="font-family: 'Montserrat', sans-serif; font-size: 16pt; font-weight: 900; color: var(--blue); min-width: 0.32in; line-height: 1;">03</div>
+            <div>
+              <h4>Especialistas en operación continua</h4>
+              <p>Experiencia probada en instalaciones donde detenerse genera pérdidas millonarias: casetas de peaje carretero, ductos de transporte, plantas de procesamiento de alimentos e invernaderos.</p>
+            </div>
+          </div>
+
+          <div class="info-card accent-lime" style="display: flex; gap: 0.12in; align-items: flex-start;">
+            <div style="font-family: 'Montserrat', sans-serif; font-size: 16pt; font-weight: 900; color: var(--lime); min-width: 0.32in; line-height: 1;">04</div>
+            <div>
+              <h4>Estricto apego y cumplimiento normativo</h4>
+              <p>Desarrollo de proyectos conforme a NOM-001-SEDE, NOM-022-STPS (tierras y pararrayos) y NOM-029-STPS. Tramitamos y entregamos dictámenes de verificación de instalaciones eléctricas (UVIE).</p>
+            </div>
+          </div>
+
+          <div class="info-card" style="display: flex; gap: 0.12in; align-items: flex-start;">
+            <div style="font-family: 'Montserrat', sans-serif; font-size: 16pt; font-weight: 900; color: var(--blue); min-width: 0.32in; line-height: 1;">05</div>
+            <div>
+              <h4>Relaciones sólidas de largo plazo</h4>
+              <p>Más del 90% de nuestros clientes renueva servicios con nosotros. La confianza industrial no se construye con promesas, sino con entregables en tiempo, forma y documentación técnica trazable.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Marco Normativo -->
+        <div style="background: var(--bg-subtle); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 0.1in 0.14in;">
+          <div style="font-family: 'Montserrat', sans-serif; font-size: 7.5pt; font-weight: 800; letter-spacing: 0.15em; color: var(--navy); text-transform: uppercase; margin-bottom: 0.05in;">
+            CERTIFICACIONES Y RIGOR TÉCNICO
+          </div>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <span style="background: #fff; border: 1px solid var(--border-line); padding: 3px 8px; border-radius: 4px; font-size: 7.2pt; font-weight: 700; color: var(--navy);">NOM-001-SEDE-2012</span>
+            <span style="background: #fff; border: 1px solid var(--border-line); padding: 3px 8px; border-radius: 4px; font-size: 7.2pt; font-weight: 700; color: var(--navy);">NOM-022-STPS-2015</span>
+            <span style="background: #fff; border: 1px solid var(--border-line); padding: 3px 8px; border-radius: 4px; font-size: 7.2pt; font-weight: 700; color: var(--navy);">NOM-029-STPS-2011</span>
+            <span style="background: #fff; border: 1px solid var(--border-line); padding: 3px 8px; border-radius: 4px; font-size: 7.2pt; font-weight: 700; color: var(--blue);">Dictámenes UVIE</span>
+            <span style="background: #fff; border: 1px solid var(--border-line); padding: 3px 8px; border-radius: 4px; font-size: 7.2pt; font-weight: 700; color: var(--lime);">Acreditaciones DC-3 STPS</span>
+          </div>
+        </div>
+
+        <footer class="sheet-footer">
+          <div>SOIX SOLUTIONS · PROPUESTA DE VALOR INDUSTRIAL</div>
+          <div class="page-number"><span style="color: var(--blue);">soixsolutions.com</span> · 03</div>
+        </footer>
+      </div>
+    </article>
+
+
+    <!-- ====================================================================
+         PÁGINA 4: INFRAESTRUCTURA ELÉCTRICA Y MEDIA TENSIÓN
+         ==================================================================== -->
+    <article class="sheet" id="page-4" data-page="4">
+      <div class="edge-accent" aria-hidden="true"></div>
+      <div class="sheet-content">
+        
+        <header class="sheet-header">
+          <div class="kicker">03 · INFRAESTRUCTURA ELÉCTRICA</div>
+          <h2>Energía confiable, de la acometida al último tablero</h2>
+          <p class="subtitle">Ingeniería, montaje y mantenimiento en media y baja tensión hasta 25 kV.</p>
+        </header>
+
+        <!-- Galería de Fotos del Servicio -->
+        <div class="card-grid-2" style="margin-bottom: 0.14in;">
+          <div class="photo-card">
+            <img src="GALERIA/AUNETI/Autopista%201.jpeg" alt="Línea aérea de media tensión autopista" style="height: 1.35in;">
+            <div class="caption">Líneas aéreas de media tensión (MT 25 kV) · Autovía Necaxa–Tihuatlán</div>
+          </div>
+          <div class="photo-card">
+            <img src="GALERIA/SeccElectrica/San%20agust%C3%ADn/San%20agustin9_web.jpg" alt="Centro de Control de Motores y Tableros" style="height: 1.35in;">
+            <div class="caption">Integración de tableros de potencia y CCM · Planta San Agustín</div>
+          </div>
+        </div>
+
+        <div style="font-family: 'Montserrat', sans-serif; font-size: 8pt; font-weight: 800; letter-spacing: 0.15em; color: var(--navy); text-transform: uppercase; margin-bottom: 0.08in;">
+          ALCANCE TÉCNICO EN MEDIA Y BAJA TENSIÓN
+        </div>
+
+        <div class="card-grid-2" style="gap: 0.12in; margin-bottom: 0.15in;">
+          <ul class="bullet-list">
+            <li>Líneas aéreas y subterráneas en media tensión hasta 25 kV.</li>
+            <li>Postería de concreto, estructuras de transición y herrajes de sujeción.</li>
+            <li>Desplazamiento de redes eléctricas por obras de ampliación vial.</li>
+            <li>Construcción de acometidas y subestaciones eléctricas compactas y tipo poste.</li>
+          </ul>
+          <ul class="bullet-list lime-bullets">
+            <li>Suministro, calibración y montaje de transformadores de hasta 300 kVA.</li>
+            <li>Tableros generales de distribución y Centros de Control de Motores (CCM).</li>
+            <li>Sistemas de puesta a tierra y red de pararrayos conforme a NOM-022-STPS.</li>
+            <li>Electrificación de naves industriales, iluminación LED y fuerza motriz.</li>
+          </ul>
+        </div>
+
+        <!-- Banner de Puesta a Tierra -->
+        <div style="display: flex; gap: 0.14in; background: var(--bg-subtle); border: 1px solid var(--border-subtle); border-left: 3px solid var(--blue); padding: 0.1in; border-radius: var(--radius-sm); align-items: center;">
+          <img src="GALERIA/Tierra.jpeg" alt="Sistema de puesta a tierra" style="width: 1in; height: 0.75in; object-fit: cover; border-radius: 4px;" onerror="this.src='GALERIA/puesta%20a%20tierra.jpg'">
+          <div>
+            <div style="font-size: 8pt; font-weight: 800; color: var(--navy); text-transform: uppercase;">PROTECCIÓN CATÓDICA Y SISTEMAS DE TIERRA</div>
+            <p style="font-size: 7.4pt; color: var(--ink-secondary); margin: 0.02in 0 0; line-height: 1.35;">
+              Medición de resistencia de tierras físicas con telurómetro, cálculo de mallas de puesta a tierra e instalación de pararrayos certificados para salvaguardar activos de alto valor.
+            </p>
+          </div>
+        </div>
+
+        <footer class="sheet-footer">
+          <div>SOIX SOLUTIONS · INFRAESTRUCTURA ELÉCTRICA Y POTENCIA</div>
+          <div class="page-number"><span style="color: var(--blue);">soixsolutions.com</span> · 04</div>
+        </footer>
+      </div>
+    </article>
+
+
+    <!-- ====================================================================
+         PÁGINA 5: MANTENIMIENTO INDUSTRIAL INTEGRAL
+         ==================================================================== -->
+    <article class="sheet" id="page-5" data-page="5">
+      <div class="edge-accent" aria-hidden="true"></div>
+      <div class="sheet-content">
+        
+        <header class="sheet-header">
+          <div class="kicker">04 · MANTENIMIENTO INDUSTRIAL</div>
+          <h2>Menos paros, mayor vida útil para sus equipos</h2>
+          <p class="subtitle">Estrategias preventivas, correctivas y predictivas para la máxima disponibilidad operativa.</p>
+        </header>
+
+        <div class="card-grid-3" style="margin-bottom: 0.15in;">
+          <div class="metric-box">
+            <div style="font-size: 16pt; margin-bottom: 2px;">🔧</div>
+            <div class="label" style="color: var(--navy); font-size: 8.5pt;">Preventivo</div>
+            <div class="detail">Servicio programado bajo calendario para evitar desgastes críticos.</div>
+          </div>
+          <div class="metric-box accent-lime">
+            <div style="font-size: 16pt; margin-bottom: 2px;">⚡</div>
+            <div class="label" style="color: var(--lime); font-size: 8.5pt;">Correctivo 24/7</div>
+            <div class="detail">Respuesta ágil ante fallas imprevistas en media y baja tensión.</div>
+          </div>
+          <div class="metric-box">
+            <div style="font-size: 16pt; margin-bottom: 2px;">📊</div>
+            <div class="label" style="color: var(--blue); font-size: 8.5pt;">Predictivo</div>
+            <div class="detail">Diagnóstico por instrumentos de medición y análisis analítico.</div>
+          </div>
+        </div>
+
+        <!-- Mosaico fotográfico de mantenimiento -->
+        <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 0.14in; margin-bottom: 0.14in;">
+          <div class="photo-card">
+            <img src="GALERIA/EGIS/MANTTO%20A%20CUARTO%20DE%20HIDROS%20WC%20BOMBAS%20Y%20PRESOSTATOS/MANTTO%20A%20CUARTO%20DE%20HIDROS%20WC%20BOMBAS%20Y%20PRESOSTATOS_1.jpeg" alt="Mantenimiento a cuarto de bombeo e hidros" style="height: 1.45in;">
+            <div class="caption">Mantenimiento electromecánico en cuarto de bombeo e hidroneumáticos · EGIS</div>
+          </div>
+          <div class="photo-card">
+            <img src="GALERIA/BROMELIAS/MANTENIMIENTO%20A%20MOTOR_1.jpeg" alt="Mantenimiento a motores y bombas" style="height: 1.45in;">
+            <div class="caption">Inspección y bobinado de motores industriales · Bromelias</div>
+          </div>
+        </div>
+
+        <div style="font-family: 'Montserrat', sans-serif; font-size: 8pt; font-weight: 800; letter-spacing: 0.15em; color: var(--navy); text-transform: uppercase; margin-bottom: 0.08in;">
+          CAPACIDADES Y ESPECIALIDADES PREDICTIVAS
+        </div>
+
+        <div class="info-card accent-lime">
+          <p style="font-size: 8.2pt; line-height: 1.4; color: var(--ink-secondary); margin: 0;">
+            <strong style="color: var(--navy);">Instrumentación y protocolos de prueba:</strong> Pruebas de resistencia de aislamiento (Megóhmetro), relación de transformación (TTR), factor de potencia, análisis físico-químico y de gases disueltos en aceite dieléctrico para transformadores, termografía infrarroja para detección temprana de sobrecalentamientos en tableros y rectificadores catódicos en ductos estratégicos.
+          </p>
+        </div>
+
+        <footer class="sheet-footer">
+          <div>SOIX SOLUTIONS · MANTENIMIENTO ELECTROMECÁNICO INDUSTRIAL</div>
+          <div class="page-number"><span style="color: var(--blue);">soixsolutions.com</span> · 05</div>
+        </footer>
+      </div>
+    </article>
+
+
+    <!-- ====================================================================
+         PÁGINA 6: AUTOMATIZACIÓN Y CONTROL DE PROCESOS
+         ==================================================================== -->
+    <article class="sheet" id="page-6" data-page="6">
+      <div class="edge-accent" aria-hidden="true"></div>
+      <div class="sheet-content">
+        
+        <header class="sheet-header">
+          <div class="kicker">05 · AUTOMATIZACIÓN Y CONTROL</div>
+          <h2>Control que se nota en la operación diaria</h2>
+          <p class="subtitle">Automatización de procesos, integración de PLC, arrancadores y supervisión de sistemas.</p>
+        </header>
+
+        <div class="card-grid-2" style="gap: 0.12in; margin-bottom: 0.16in;">
+          <div class="info-card">
+            <h4>🛢 Control Automático de Niveles en Tanques</h4>
+            <p>Sistemas de llenado y dosificación automatizados con arrancadores de estado sólido y sensores electronivel para el control preciso de fluidos sin intervención manual.</p>
+          </div>
+          <div class="info-card accent-lime">
+            <h4>⚙ Arranque de Bombeo a Tensión Reducida</h4>
+            <p>Arranque suave y protección integral para sistemas de bombeo industrial, mitigando golpes de ariete y sobretensiones en la red de alimentación.</p>
+          </div>
+          <div class="info-card accent-lime">
+            <h4>🌱 Riego y Climatización en Invernaderos</h4>
+            <p>Control automatizado de bombas, electroválvulas y arrancadores por zonas horarias para optimizar el consumo de energía y agua en instalaciones agrícolas.</p>
+          </div>
+          <div class="info-card">
+            <h4>🖥 Migración y Programación de PLC Siemens</h4>
+            <p>Actualización y reemplazo de controladores lógicos programables Siemens (S7-300 y S7-1200), módulos de E/S y paneles de operador HMI táctiles.</p>
+          </div>
+        </div>
+
+        <div class="photo-card" style="margin-bottom: 0.15in;">
+          <img src="GALERIA/BROMELIAS/REEMPLAZO%20CENTRO%20DE%20CARGA,%20REPARACION%202%20VENTILADORES_1.jpeg" alt="Tableros de control y automatización" style="height: 1.35in;">
+          <div class="caption">Reemplazo de centros de carga, control térmico y protecciones de ventilación</div>
+        </div>
+
+        <div style="background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%); color: #fff; padding: 0.12in 0.16in; border-radius: var(--radius-sm);">
+          <div style="font-family: 'Montserrat', sans-serif; font-size: 7.5pt; font-weight: 800; letter-spacing: 0.15em; color: var(--lime); text-transform: uppercase; margin-bottom: 0.03in;">
+            INGENIERÍA DE ACTUALIZACIÓN EN LÍNEAS DE PROCESO
+          </div>
+          <p style="margin: 0; font-size: 8pt; line-height: 1.4; color: #dceaf3;">
+            Servicios de diagnóstico, levantamiento de arquitectura de control y migración de lógica en manejadoras de aire y cuartos técnicos industriales, garantizando comisionamiento rápido y capacitación a operadores.
+          </p>
+        </div>
+
+        <footer class="sheet-footer">
+          <div>SOIX SOLUTIONS · AUTOMATIZACIÓN, SCADA Y CONTROL DE PROCESOS</div>
+          <div class="page-number"><span style="color: var(--blue);">soixsolutions.com</span> · 06</div>
+        </footer>
+      </div>
+    </article>
+
+
+    <!-- ====================================================================
+         PÁGINA 7: CONSTRUCCIÓN E INFRAESTRUCTURA
+         ==================================================================== -->
+    <article class="sheet" id="page-7" data-page="7">
+      <div class="edge-accent" aria-hidden="true"></div>
+      <div class="sheet-content">
+        
+        <header class="sheet-header">
+          <div class="kicker">06 · CONSTRUCCIÓN E INFRAESTRUCTURA</div>
+          <h2>Obra civil e industrial, de la terracería a la entrega</h2>
+          <p class="subtitle">Infraestructura agroindustrial, naves avícolas, pavimentación y obra civil complementaria.</p>
+        </header>
+
+        <div class="card-grid-2" style="margin-bottom: 0.14in;">
+          <div class="photo-card">
+            <img src="GALERIA/Granja%20el%20Naranjal/Granja%20Naranjal%201.jpeg" alt="Granja el Naranjal construcción" style="height: 1.35in;">
+            <div class="caption">Granja El Naranjal · Obra civil, pavimentación hidráulica y naves de producción</div>
+          </div>
+          <div class="photo-card">
+            <img src="GALERIA/AVIGRUPO/REEMPLAZO%20DE%20EXTRACTORES_1.jpeg" alt="Estructuras metálicas y naves Avigrupo" style="height: 1.35in;">
+            <div class="caption">Reemplazo de extractores y adecuación de naves avícolas · Avigrupo</div>
+          </div>
+        </div>
+
+        <div style="font-family: 'Montserrat', sans-serif; font-size: 8pt; font-weight: 800; letter-spacing: 0.15em; color: var(--navy); text-transform: uppercase; margin-bottom: 0.08in;">
+          SOLUCIONES CONSTRUCTIVAS INTEGRALES
+        </div>
+
+        <div class="card-grid-2" style="gap: 0.12in; margin-bottom: 0.14in;">
+          <ul class="bullet-list">
+            <li>Construcción y rehabilitación integral de granjas avícolas tecnificadas.</li>
+            <li>Cisternas de almacenamiento con geomembrana de alta densidad y estructura perimetral de acero.</li>
+            <li>Caminos de acceso y patios de maniobras en concreto hidráulico y asfalto.</li>
+          </ul>
+          <ul class="bullet-list lime-bullets">
+            <li>Terracerías, despalme, compactación y conformación de plataformas.</li>
+            <li>Cuartos de control, casetas de vigilancia y subestaciones eléctricas.</li>
+            <li>Obra pública municipal: pavimentación con concreto, electrificación y drenajes.</li>
+          </ul>
+        </div>
+
+        <div style="background: var(--bg-subtle); border: 1px solid var(--border-subtle); border-left: 3px solid var(--blue); border-radius: var(--radius-sm); padding: 0.1in 0.14in; display: flex; align-items: center; justify-content: space-between;">
+          <div>
+            <div style="font-size: 8.5pt; font-weight: 800; color: var(--navy);">100% EQUIPAMIENTO PROPIO Y CUADRILLAS ESPECIALIZADAS</div>
+            <div style="font-size: 7.5pt; color: var(--ink-secondary); margin-top: 2px;">Maquinaria, retroexcavadoras, camiones de volteo y herramienta certificada para cumplir plazos rigurosos.</div>
+          </div>
+          <div style="font-family: 'Montserrat', sans-serif; font-size: 22pt; font-weight: 900; color: var(--blue); margin-left: 0.15in;">100%</div>
+        </div>
+
+        <footer class="sheet-footer">
+          <div>SOIX SOLUTIONS · INFRAESTRUCTURA Y CONSTRUCCIÓN INDUSTRIAL</div>
+          <div class="page-number"><span style="color: var(--blue);">soixsolutions.com</span> · 07</div>
+        </footer>
+      </div>
+    </article>
+
+
+    <!-- ====================================================================
+         PÁGINA 8: INGENIERÍA Y GESTIÓN DE PROYECTOS
+         ==================================================================== -->
+    <article class="sheet" id="page-8" data-page="8">
+      <div class="edge-accent" aria-hidden="true"></div>
+      <div class="sheet-content">
+        
+        <header class="sheet-header">
+          <div class="kicker">07 · INGENIERÍA Y GESTIÓN DE PROYECTOS</div>
+          <h2>De principio a fin, con un solo responsable</h2>
+          <p class="subtitle">Metodología rigurosa en 6 etapas para asegurar costo, plazo y calidad.</p>
+        </header>
+
+        <!-- Pasos metodológicos -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.1in; margin-bottom: 0.15in;">
+          <div class="info-card" style="display: flex; gap: 0.1in; align-items: flex-start;">
+            <div style="background: var(--navy); color: #fff; width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; font-size: 8pt; font-weight: 800; flex-shrink: 0;">1</div>
+            <div>
+              <h4>Diagnóstico y Levantamiento</h4>
+              <p>Visita a sitio, levantamiento topográfico y dimensional, análisis de cargas eléctricas y diagnóstico del estado real de equipos.</p>
+            </div>
+          </div>
+
+          <div class="info-card accent-lime" style="display: flex; gap: 0.1in; align-items: flex-start;">
+            <div style="background: var(--lime); color: #fff; width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; font-size: 8pt; font-weight: 800; flex-shrink: 0;">2</div>
+            <div>
+              <h4>Ingeniería Básica y de Detalle</h4>
+              <p>Planos en AutoCAD, memorias de cálculo de alimentadores y cortocircuito, catálogo de conceptos y especificaciones técnicas bajo norma.</p>
+            </div>
+          </div>
+
+          <div class="info-card" style="display: flex; gap: 0.1in; align-items: flex-start;">
+            <div style="background: var(--navy); color: #fff; width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; font-size: 8pt; font-weight: 800; flex-shrink: 0;">3</div>
+            <div>
+              <h4>Suministro Especializado</h4>
+              <p>Adquisición directa con fabricantes líderes, control de calidad, certificados de pruebas de laboratorio y trazabilidad de materiales.</p>
+            </div>
+          </div>
+
+          <div class="info-card accent-lime" style="display: flex; gap: 0.1in; align-items: flex-start;">
+            <div style="background: var(--lime); color: #fff; width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; font-size: 8pt; font-weight: 800; flex-shrink: 0;">4</div>
+            <div>
+              <h4>Ejecución y Supervisión en Sitio</h4>
+              <p>Cuadrillas capacitadas, residencia de obra continua, cumplimiento de normas de seguridad STPS y reportes periódicos de avance.</p>
+            </div>
+          </div>
+
+          <div class="info-card" style="display: flex; gap: 0.1in; align-items: flex-start;">
+            <div style="background: var(--navy); color: #fff; width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; font-size: 8pt; font-weight: 800; flex-shrink: 0;">5</div>
+            <div>
+              <h4>Pruebas y Puesta en Marcha</h4>
+              <p>Pruebas de aislamiento, continuidad y secuencia de fases; energización controlada y entrega de planos "As-Built" finales.</p>
+            </div>
+          </div>
+
+          <div class="info-card accent-lime" style="display: flex; gap: 0.1in; align-items: flex-start;">
+            <div style="background: var(--lime); color: #fff; width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; font-size: 8pt; font-weight: 800; flex-shrink: 0;">6</div>
+            <div>
+              <h4>Póliza de Mantenimiento</h4>
+              <p>Acompañamiento post-entrega con pólizas preventivas y contratos marco de atención de emergencias para respaldo continuo.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="font-family: 'Montserrat', sans-serif; font-size: 8pt; font-weight: 800; letter-spacing: 0.15em; color: var(--navy); text-transform: uppercase; margin-bottom: 0.08in;">
+          SERVICIOS TÉCNICOS COMPLEMENTARIOS
+        </div>
+
+        <div class="card-grid-3">
+          <div class="info-card">
+            <h4>❄ Climatización HVAC</h4>
+            <p>Suministro e instalación de equipos minisplit y enfriamiento para cuartos de control y tableros.</p>
+          </div>
+          <div class="info-card">
+            <h4>☀ Alumbrado Solar & LED</h4>
+            <p>Sistemas autónomos de alumbrado perimetral, reflectores LED y señalización vial.</p>
+          </div>
+          <div class="info-card">
+            <h4>📋 Gestión de Licitaciones</h4>
+            <p>Integración de expedientes técnicos para licitaciones públicas y privadas conforme a la ley de obra.</p>
+          </div>
+        </div>
+
+        <footer class="sheet-footer">
+          <div>SOIX SOLUTIONS · CICLO DE GESTIÓN Y SUPERVISIÓN DE PROYECTOS</div>
+          <div class="page-number"><span style="color: var(--blue);">soixsolutions.com</span> · 08</div>
+        </footer>
+      </div>
+    </article>
+
+
+    <!-- ====================================================================
+         PÁGINA 9: SECTORES QUE ATENDEMOS Y COBERTURA
+         ==================================================================== -->
+    <article class="sheet" id="page-9" data-page="9">
+      <div class="edge-accent" aria-hidden="true"></div>
+      <div class="sheet-content">
+        
+        <header class="sheet-header">
+          <div class="kicker">08 · SECTORES QUE ATENDEMOS</div>
+          <h2>Presencia en sectores de alta exigencia</h2>
+          <p class="subtitle">Soluciones de ingeniería adaptadas a las normativas y dinámicas de cada industria.</p>
+        </header>
+
+        <div class="card-grid-2" style="gap: 0.11in; margin-bottom: 0.16in;">
+          <div class="info-card">
+            <h4 style="color: var(--blue);">🛣 Sector Carretero y Concesiones</h4>
+            <p>Mantenimiento electromecánico en plazas de cobro, casetas de peaje, alumbrado de túneles y líneas de distribución en autopistas de cuota (Tulancingo–Nuevo Necaxa y Necaxa–Tihuatlán).</p>
+          </div>
+          <div class="info-card accent-lime">
+            <h4 style="color: var(--navy);">⚡ Energía, Ductos y Petróleo</h4>
+            <p>Estaciones de bombeo, rectificadores de protección catódica en ductos de hidrocarburos, unidades receptoras de 23 kV y sistemas de respaldo continuo para estaciones remotas.</p>
+          </div>
+          <div class="info-card accent-lime">
+            <h4 style="color: var(--navy);">🌾 Agroindustria y Procesamiento</h4>
+            <p>Complejos avícolas de gran escala, beneficios de café, invernaderos de alta tecnología, tanques de geomembrana y centros de acopio agrícola con requerimientos de energía limpia.</p>
+          </div>
+          <div class="info-card">
+            <h4 style="color: var(--blue);">🏭 Alimentos, Bebidas y Manufactura</h4>
+            <p>Plantas de producción alimentaria con altos estándares de inocuidad: mantenimiento a CCMs, variadores de frecuencia, tableros de transferencia y sistemas de bombeo sanitario.</p>
+          </div>
+          <div class="info-card">
+            <h4 style="color: var(--blue);">🏛 Sector Público y Gobierno</h4>
+            <p>CFE y gobiernos municipales: rehabilitación de redes eléctricas tras contingencias meteorológicas, electrificación rural, obra hidráulica y alumbrado público vial.</p>
+          </div>
+          <div class="info-card accent-lime">
+            <h4 style="color: var(--navy);">🛒 Comercio, Logística y Servicios</h4>
+            <p>Cadenas de supermercados, tiendas de autoservicio y bodegas de almacenamiento: instalaciones eléctricas de fuerza, iluminación eficiente y cuartos de subestaciones.</p>
+          </div>
+        </div>
+
+        <!-- Cobertura geográfica -->
+        <div style="background: var(--bg-subtle); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 0.12in 0.16in; text-align: center;">
+          <div style="font-family: 'Montserrat', sans-serif; font-size: 7.5pt; font-weight: 800; letter-spacing: 0.15em; color: var(--navy); text-transform: uppercase; margin-bottom: 0.08in;">
+            COBERTURA OPERATIVA NACIONAL
+          </div>
+          <div style="display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;">
+            <span style="background: var(--navy); color: #fff; padding: 4px 12px; border-radius: 20px; font-size: 7.5pt; font-weight: 800;">PUEBLA</span>
+            <span style="background: var(--navy); color: #fff; padding: 4px 12px; border-radius: 20px; font-size: 7.5pt; font-weight: 800;">VERACRUZ</span>
+            <span style="background: var(--navy); color: #fff; padding: 4px 12px; border-radius: 20px; font-size: 7.5pt; font-weight: 800;">HIDALGO</span>
+            <span style="background: var(--navy); color: #fff; padding: 4px 12px; border-radius: 20px; font-size: 7.5pt; font-weight: 800;">JALISCO</span>
+            <span style="background: var(--navy); color: #fff; padding: 4px 12px; border-radius: 20px; font-size: 7.5pt; font-weight: 800;">TLAXCALA</span>
+            <span style="background: var(--navy); color: #fff; padding: 4px 12px; border-radius: 20px; font-size: 7.5pt; font-weight: 800;">ESTADO DE MÉXICO & CDMX</span>
+          </div>
+        </div>
+
+        <footer class="sheet-footer">
+          <div>SOIX SOLUTIONS · EXPERIENCIA MULTISECTORIAL</div>
+          <div class="page-number"><span style="color: var(--blue);">soixsolutions.com</span> · 09</div>
+        </footer>
+      </div>
+    </article>
+
+
+    <!-- ====================================================================
+         PÁGINA 10: CASOS DE ÉXITO EMBLEMÁTICOS
+         ==================================================================== -->
+    <article class="sheet" id="page-10" data-page="10">
+      <div class="edge-accent" aria-hidden="true"></div>
+      <div class="sheet-content">
+        
+        <header class="sheet-header">
+          <div class="kicker">09 · CASOS DE ÉXITO</div>
+          <h2>Proyectos insignia que respaldan nuestro trabajo</h2>
+          <p class="subtitle">Casos reales de ingeniería, mantenimiento y respuesta técnica en proyectos estratégicos.</p>
+        </header>
+
+        <div class="card-grid-2" style="gap: 0.12in; margin-bottom: 0.15in;">
+          <div class="info-card">
+            <h4 style="color: var(--navy);">AVIGRUPO · Complejos Avícolas</h4>
+            <p><strong>Alcance:</strong> Construcción y reconstrucción de granjas en Tihuatlán, Papantla y El Juguete (Veracruz); terracerías masivas en Tepatitlán (Jalisco) y cisternas de geomembrana de alta capacidad.</p>
+          </div>
+          <div class="info-card accent-lime">
+            <h4 style="color: var(--navy);">EGIS / AUNETI · Concesión Carretera</h4>
+            <p><strong>Alcance:</strong> Mantenimiento electromecánico ininterrumpido en casetas de peaje Tejocotal y Nuevo Necaxa, y líneas de media tensión en la autovía Necaxa–Tihuatlán.</p>
+          </div>
+          <div class="info-card accent-lime">
+            <h4 style="color: var(--navy);">DUCTOS Y TERMINALES · Transporte de Combustible</h4>
+            <p><strong>Alcance:</strong> Pruebas y mantenimiento preventivo/correctivo a unidades de media tensión de 23 kV y rectificadores de protección catódica en tramos Poza Rica–Ahuazotepec.</p>
+          </div>
+          <div class="info-card">
+            <h4 style="color: var(--navy);">CFE · Emergencia Huracán Otis</h4>
+            <p><strong>Alcance:</strong> Movilización de emergencia de personal y maquinaria para la reconstrucción de líneas aéreas y reposición de postes en redes de media y baja tensión afectadas por el meteoro.</p>
+          </div>
+          <div class="info-card">
+            <h4 style="color: var(--navy);">NESTLÉ MÉXICO · Planta Industrial</h4>
+            <p><strong>Alcance:</strong> Mantenimiento menor programado, suministro de componentes de fuerza y control, y adecuación de tableros eléctricos en líneas de producción continuo (2025–2026).</p>
+          </div>
+          <div class="info-card accent-lime">
+            <h4 style="color: var(--navy);">LA FORTUNA & LA LAJA · Agroindustria</h4>
+            <p><strong>Alcance:</strong> Suministro y montaje de transformador de 300 kVA, mantenimiento a líneas MT y automatización de llenado de tanques mediante electroniveles y arrancadores.</p>
+          </div>
+        </div>
+
+        <div style="background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%); color: #fff; padding: 0.14in 0.18in; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: space-between;">
+          <div>
+            <div style="font-family: 'Montserrat', sans-serif; font-size: 8pt; font-weight: 800; color: var(--lime); letter-spacing: 0.15em; text-transform: uppercase;">CONFIANZA RECURRENTE</div>
+            <div style="font-size: 8.5pt; font-weight: 700; color: #fff; margin-top: 2px;">Más del 90% de nuestros clientes nos contrata año tras año.</div>
+            <div style="font-size: 7.5pt; color: #cbdbe6;">Resultados medibles, cumplimiento en plazos y cero incidentes incapacitantes.</div>
+          </div>
+          <div style="font-family: 'Montserrat', sans-serif; font-size: 28pt; font-weight: 900; color: var(--blue); margin-left: 0.2in;">100%</div>
+        </div>
+
+        <footer class="sheet-footer">
+          <div>SOIX SOLUTIONS · CASOS DE ÉXITO EN INFRAESTRUCTURA</div>
+          <div class="page-number"><span style="color: var(--blue);">soixsolutions.com</span> · 10</div>
+        </footer>
+      </div>
+    </article>
+
+
+    <!-- ====================================================================
+         PÁGINA 11: CLIENTES, ALIANZAS Y CUMPLIMIENTO NORMATIVO
+         ==================================================================== -->
+    <article class="sheet" id="page-11" data-page="11">
+      <div class="edge-accent" aria-hidden="true"></div>
+      <div class="sheet-content">
+        
+        <header class="sheet-header">
+          <div class="kicker">10 · CLIENTES Y CUMPLIMIENTO</div>
+          <h2>La confianza que respalda nuestra capacidad</h2>
+          <p class="subtitle">Empresas líderes e instituciones que avalan la calidad técnica de SOIX Solutions.</p>
+        </header>
+
+        <!-- Muro de Logotipos Oficiales de Clientes -->
+        <div style="font-family: 'Montserrat', sans-serif; font-size: 7.5pt; font-weight: 800; letter-spacing: 0.15em; color: var(--navy); text-transform: uppercase; margin-bottom: 0.06in;">
+          CLIENTES PRINCIPALES
+        </div>
+
+        <div class="clients-grid">
+          <div class="client-logo-card">
+            <img src="LOGOS%20DE%20LAS%20EMPRESAS/egis.png" alt="EGIS">
+            <span class="name">EGIS AUNETI</span>
+          </div>
+          <div class="client-logo-card">
+            <img src="LOGOS%20DE%20LAS%20EMPRESAS/CFE.webp" alt="CFE">
+            <span class="name">CFE</span>
+          </div>
+          <div class="client-logo-card">
+            <img src="LOGOS%20DE%20LAS%20EMPRESAS/NESTLE.png" alt="Nestlé">
+            <span class="name">NESTLÉ</span>
+          </div>
+          <div class="client-logo-card">
+            <img src="LOGOS%20DE%20LAS%20EMPRESAS/AVIGRUPO.png" alt="Avigrupo">
+            <span class="name">AVIGRUPO</span>
+          </div>
+          <div class="client-logo-card">
+            <img src="LOGOS%20DE%20LAS%20EMPRESAS/CIPSA.webp" alt="CIPSA">
+            <span class="name">CIPSA</span>
+          </div>
+          <div class="client-logo-card">
+            <img src="LOGOS%20DE%20LAS%20EMPRESAS/DUCTOS.webp" alt="Ductos y Terminales">
+            <span class="name">DUCTOS & TERMINALES</span>
+          </div>
+          <div class="client-logo-card">
+            <img src="LOGOS%20DE%20LAS%20EMPRESAS/LA%20LAJA.png" alt="La Laja">
+            <span class="name">LA LAJA</span>
+          </div>
+          <div class="client-logo-card">
+            <img src="LOGOS%20DE%20LAS%20EMPRESAS/LA%20FORTUNA.png" alt="La Fortuna">
+            <span class="name">LA FORTUNA</span>
+          </div>
+          <div class="client-logo-card">
+            <img src="LOGOS%20DE%20LAS%20EMPRESAS/FINCA%20LA%20PUEBLA.png" alt="Finca La Puebla">
+            <span class="name">FINCA LA PUEBLA</span>
+          </div>
+          <div class="client-logo-card">
+            <img src="LOGOS%20DE%20LAS%20EMPRESAS/HUGAR%20AUTOSERVICIO.jfif" alt="Hugar Autoservicios">
+            <span class="name">HUGAR AUTOSERVICIOS</span>
+          </div>
+          <div class="client-logo-card">
+            <img src="LOGOS%20DE%20LAS%20EMPRESAS/MRO.jpg" alt="MRO Golfo Centro">
+            <span class="name">MRO GOLFO CENTRO</span>
+          </div>
+          <div class="client-logo-card">
+            <img src="LOGOS%20DE%20LAS%20EMPRESAS/auneti.jpg" alt="Auneti">
+            <span class="name">AUNETI AUTOVÍA</span>
+          </div>
+        </div>
+
+        <!-- Marcas con las que trabajamos -->
+        <div style="font-family: 'Montserrat', sans-serif; font-size: 7.5pt; font-weight: 800; letter-spacing: 0.15em; color: var(--navy); text-transform: uppercase; margin-bottom: 0.05in;">
+          COMPONENTES Y ALIANZAS TECNOLÓGICAS
+        </div>
+
+        <div class="card-grid-4" style="margin-bottom: 0.14in;">
+          <div style="background: var(--navy); color: #fff; text-align: center; padding: 6px; border-radius: var(--radius-sm); font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 8.5pt;">SIEMENS</div>
+          <div style="background: var(--navy); color: #fff; text-align: center; padding: 6px; border-radius: var(--radius-sm); font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 8.5pt;">SCHNEIDER</div>
+          <div style="background: var(--navy); color: #fff; text-align: center; padding: 6px; border-radius: var(--radius-sm); font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 8.5pt;">WEG</div>
+          <div style="background: var(--navy); color: #fff; text-align: center; padding: 6px; border-radius: var(--radius-sm); font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 8.5pt;">RIELLO / ABB</div>
+        </div>
+
+        <!-- Misión, Visión y Valores -->
+        <div class="card-grid-3">
+          <div class="info-card">
+            <h4 style="color: var(--blue);">Misión</h4>
+            <p>Brindar soluciones integrales de ingeniería con procesos eficientes, innovación tecnológica y personal capacitado, garantizando valor para cada cliente.</p>
+          </div>
+          <div class="info-card accent-lime">
+            <h4 style="color: var(--lime);">Visión</h4>
+            <p>Ser un referente nacional en infraestructura eléctrica, automatización y obra civil, reconocidos por nuestra disciplina operativa y cumplimiento estricto.</p>
+          </div>
+          <div class="info-card">
+            <h4 style="color: var(--navy);">Valores</h4>
+            <p><strong>Innovación:</strong> Mejores técnicas aplicadas.<br><strong>Profesionalismo:</strong> Personal certificado.<br><strong>Compromiso:</strong> Respeto a tiempos y costos.</p>
+          </div>
+        </div>
+
+        <footer class="sheet-footer">
+          <div>SOIX SOLUTIONS · CLIENTES, ALIANZAS Y VALORES INSTITUCIONALES</div>
+          <div class="page-number"><span style="color: var(--blue);">soixsolutions.com</span> · 11</div>
+        </footer>
+      </div>
+    </article>
+
+
+    <!-- ====================================================================
+         PÁGINA 12: ANEXO DE PROYECTOS Y CONTRAPORTADA / CONTACTO
+         ==================================================================== -->
+    <article class="sheet" id="page-12" data-page="12">
+      <div class="edge-accent" aria-hidden="true"></div>
+      <div class="sheet-content">
+        
+        <header class="sheet-header">
+          <div class="kicker">11 · ANEXO HISTÓRICO Y CONTACTO</div>
+          <h2>Proyectos seleccionados y contacto directo</h2>
+          <p class="subtitle">Historial de proyectos clave y canales de comunicación para cotizaciones y atención.</p>
+        </header>
+
+        <!-- Tabla de proyectos -->
+        <table class="project-table">
+          <thead>
+            <tr>
+              <th style="width: 25%;">CLIENTE</th>
+              <th style="width: 60%;">DESCRIPCIÓN DEL PROYECTO</th>
+              <th style="width: 15%;">AÑO</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="client-cell">AVIGRUPO</td>
+              <td>Reconstrucción integral de granja avícola y terracerías, Tihuatlán, Ver.</td>
+              <td class="year-cell">2026</td>
+            </tr>
+            <tr>
+              <td class="client-cell">AVIGRUPO</td>
+              <td>Cisternas de geomembrana con estructura metálica, Papantla y Tihuatlán</td>
+              <td class="year-cell">2026</td>
+            </tr>
+            <tr>
+              <td class="client-cell">AUNETI</td>
+              <td>Mantenimiento de línea de media tensión MT 25 kV, Autovía Necaxa–Tihuatlán</td>
+              <td class="year-cell">2026</td>
+            </tr>
+            <tr>
+              <td class="client-cell">NESTLÉ MÉXICO</td>
+              <td>Mantenimiento preventivo, suministros y servicios de control en planta</td>
+              <td class="year-cell">2025-26</td>
+            </tr>
+            <tr>
+              <td class="client-cell">EGIS INFRAESTRUCTURA</td>
+              <td>Mantenimiento electromecánico en casetas Tejocotal y Nuevo Necaxa</td>
+              <td class="year-cell">2024-26</td>
+            </tr>
+            <tr>
+              <td class="client-cell">CFE</td>
+              <td>Rehabilitación de redes de media y baja tensión tras huracán Otis</td>
+              <td class="year-cell">2024</td>
+            </tr>
+            <tr>
+              <td class="client-cell">DUCTOS Y TERMINALES</td>
+              <td>Pruebas de aislamiento y mantenimiento a unidades receptoras MT 23 kV</td>
+              <td class="year-cell">2020-23</td>
+            </tr>
+            <tr>
+              <td class="client-cell">CIPSA</td>
+              <td>Servicio de emergencia en media tensión 25 kV, Planta 1</td>
+              <td class="year-cell">2023-25</td>
+            </tr>
+            <tr>
+              <td class="client-cell">LA LAJA</td>
+              <td>Suministro e instalación de transformador de 300 kVA y mantenimiento MT</td>
+              <td class="year-cell">2025</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Canales de Contacto Directo -->
+        <div style="font-family: 'Montserrat', sans-serif; font-size: 7.5pt; font-weight: 800; letter-spacing: 0.15em; color: var(--navy); text-transform: uppercase; margin-bottom: 0.05in;">
+          CANALES DE ATENCIÓN DIRECTA
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="label">✉ CORREO ELECTRÓNICO</div>
+            <a href="mailto:proyectos@soixsolutions.com">proyectos@soixsolutions.com</a>
+          </div>
+          <div class="contact-card accent-lime">
+            <div class="label">📞 TELÉFONO DE ATENCIÓN</div>
+            <a href="tel:7644890234">764 489 0234</a>
+          </div>
+          <div class="contact-card accent-lime">
+            <div class="label">💬 WHATSAPP DIRECTO</div>
+            <a href="https://wa.me/522298590339" target="_blank">+52 229 859 0339</a>
+          </div>
+          <div class="contact-card">
+            <div class="label">🌐 PORTAL WEB OFICIAL</div>
+            <a href="https://www.soixsolutions.com" target="_blank">www.soixsolutions.com</a>
+          </div>
+        </div>
+
+        <!-- Dirección y QR -->
+        <div class="qr-block">
+          <div class="qr-code">
+            <!-- QR generado con API directa de Google Charts sin dependencias -->
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fwa.me%2F522298590339" alt="QR WhatsApp SOIX">
+          </div>
+          <div class="qr-text">
+            <h4>Contáctenos vía WhatsApp</h4>
+            <p>Escanee este código QR para iniciar una conversación técnica directa con nuestro equipo de proyectos. Respuesta en menos de 24 horas hábiles.</p>
+            <p style="margin-top: 4px; color: var(--lime); font-weight: 700;">
+              📍 Privada Vicente Guerrero #182, Col. Centro, Xicotepec de Juárez, Puebla.
+            </p>
+          </div>
+        </div>
+
+        <footer class="sheet-footer">
+          <div>© 2026 SOIX SOLUTIONS · TODOS LOS DERECHOS RESERVADOS</div>
+          <div class="page-number"><span style="color: var(--blue);">soixsolutions.com</span> · 12</div>
+        </footer>
+      </div>
+    </article>
+
+  </main>
+
+  <script>
+    function scrollToPage(pageNum) {
+      const pageEl = document.getElementById('page-' + pageNum);
+      if (pageEl) {
+        pageEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  </script>
+</body>
+</html>
