@@ -859,19 +859,19 @@ img {
     transition: var(--transition);
     z-index: 999;
   }
-  
+
   .nav-menu.active {
     right: 0;
     box-shadow: -10px 0 30px rgba(0,0,0,0.5);
   }
-  
+
   .nav-links {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     align-items: center;
     gap: 40px;
   }
-  
+
   .nav-link {
     font-size: 1.5rem;
   }
@@ -1002,36 +1002,32 @@ img {
 }
 
 @media (max-width: 768px) {
-  .nav-links {
-    display: none; /* Mobile menu logic in JS */
-  }
-  
   .nav-cta {
     display: none;
   }
-  
+
   .menu-toggle {
     display: block;
   }
-  
+
   .hero-btns {
     flex-direction: column;
   }
-  
+
   .footer-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .footer-bottom {
     flex-direction: column;
     gap: 20px;
     text-align: center;
   }
-  
+
   .section-header {
     text-align: center;
   }
-  
+
   .section-line {
     margin: 20px auto 0;
   }
@@ -1039,6 +1035,7 @@ img {
   /* Brochure responsive */
   .brochure-layout {
     grid-template-columns: 1fr;
+    gap: 48px;
   }
 
   .brochure-preview {
@@ -1046,8 +1043,7 @@ img {
   }
 
   .brochure-mockup {
-    max-width: 420px;
-    margin: 0 auto;
+    max-width: 100%;
   }
 
   .brochure-actions {
@@ -1057,6 +1053,10 @@ img {
   .brochure-actions .btn {
     width: 100%;
     justify-content: center;
+  }
+
+  .brochure-copy .section-title {
+    font-size: 2rem;
   }
 }
 
