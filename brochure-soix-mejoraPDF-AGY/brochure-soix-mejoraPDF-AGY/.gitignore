@@ -1,0 +1,124 @@
+# ==============================================================================
+# .gitignore — SOIX Solutions Brochure Corporativo
+# ==============================================================================
+
+# Ignorar todo por defecto en la raíz
+/*
+
+# ------------------------------------------------------------------------------
+# 1. Archivos principales del proyecto web y configuración
+# ------------------------------------------------------------------------------
+!/.gitignore
+!/LICENSE
+!/index.html
+!/soix.html
+!/exportar-brochure.ps1
+!/css/
+!/css/**
+
+# ------------------------------------------------------------------------------
+# 2. Logotipos corporativos y de clientes
+# ------------------------------------------------------------------------------
+!/Logos SOIX/
+!/Logos SOIX/**
+!/LOGOS DE LAS EMPRESAS/
+!/LOGOS DE LAS EMPRESAS/**
+
+# ------------------------------------------------------------------------------
+# 3. Galería: ignorar la carpeta completa pero permitir solo las fotos utilizadas
+# ------------------------------------------------------------------------------
+!/GALERIA/
+GALERIA/*
+
+# Fotos esenciales utilizadas en index.html y brochure.css:
+!/GALERIA/portada.png
+!/GALERIA/Tierra.jpeg
+!/GALERIA/puesta a tierra.jpg
+!/GALERIA/Diseño.jpeg
+!/GALERIA/ejecución.jpeg
+!/GALERIA/cableado.jpeg
+!/GALERIA/hidrapulper.jpeg
+!/GALERIA/REPARACION DE POSTE Y DADO_2.jpeg
+!/GALERIA/SERVICIO EN MEDIA TENSION EN OCOMANTLA.jpeg
+!/GALERIA/SERVICIO EN MEDIA TENSION EN Ocomantla (2).jpeg
+!/GALERIA/NESTLE INSTALACIÓN DE LUMINARIAS.jpeg
+!/GALERIA/Huracan Jerry apoyo a CFE (3).jpeg
+!/GALERIA/civil.jpeg
+!/GALERIA/Estructura avigrupo (2).jpeg
+!/GALERIA/Estructura Estética.jpeg
+
+# Subcarpetas requeridas en GALERIA:
+!/GALERIA/AUNETI/
+GALERIA/AUNETI/*
+!/GALERIA/AUNETI/Autopista 1.jpeg
+
+!/GALERIA/AVIGRUPO/
+GALERIA/AVIGRUPO/*
+!/GALERIA/AVIGRUPO/REEMPLAZO DE EXTRACTORES_1.jpeg
+
+!/GALERIA/BROMELIAS/
+GALERIA/BROMELIAS/*
+!/GALERIA/BROMELIAS/MANTENIMIENTO A MOTOR_1.jpeg
+!/GALERIA/BROMELIAS/MANTENIMIENTO A MOTOR_2.jpeg
+!/GALERIA/BROMELIAS/REEMPLAZO CENTRO DE CARGA, REPARACION 2 VENTILADORES_1.jpeg
+!/GALERIA/BROMELIAS/SUM Y REEM DE ARRANCA PARA VENT DE INV EUROPERO_2.jpeg
+!/GALERIA/BROMELIAS/SUM Y REEM DE ARRANCA PARA VENT DE INV EUROPERO_3.jpeg
+
+!/GALERIA/CIPSA/
+GALERIA/CIPSA/*
+!/GALERIA/CIPSA/SERVICIO EN MEDIA TENSION EN OLANTA_1.jpeg
+
+!/GALERIA/EGIS/
+GALERIA/EGIS/*
+!/GALERIA/EGIS/POSTES Y CAMARAS TEXCOCO/
+GALERIA/EGIS/POSTES Y CAMARAS TEXCOCO/*
+!/GALERIA/EGIS/POSTES Y CAMARAS TEXCOCO/POSTES Y CAMARAS TEXCOCO_1.jpeg
+!/GALERIA/EGIS/MANTTO A CUARTO DE HIDROS WC BOMBAS Y PRESOSTATOS/
+GALERIA/EGIS/MANTTO A CUARTO DE HIDROS WC BOMBAS Y PRESOSTATOS/*
+!/GALERIA/EGIS/MANTTO A CUARTO DE HIDROS WC BOMBAS Y PRESOSTATOS/MANTTO A CUARTO DE HIDROS WC BOMBAS Y PRESOSTATOS_1.jpeg
+!/GALERIA/EGIS/MANTTO A CUARTO DE HIDROS WC BOMBAS Y PRESOSTATOS/MANTTO A CUARTO DE HIDROS WC BOMBAS Y PRESOSTATOS_2.jpeg
+
+!/GALERIA/Granja el Naranjal/
+GALERIA/Granja el Naranjal/*
+!/GALERIA/Granja el Naranjal/Granja Naranjal 1.jpeg
+
+!/GALERIA/Hidrapulper y línea de proceso en acero Inoxidable Scribe/
+GALERIA/Hidrapulper y línea de proceso en acero Inoxidable Scribe/*
+!/GALERIA/Hidrapulper y línea de proceso en acero Inoxidable Scribe/74Hidrapulper y línea de proceso en acero Inoxidable Scribe.jpeg
+
+!/GALERIA/SCRIBE/
+GALERIA/SCRIBE/*
+!/GALERIA/SCRIBE/Hidrapulper y línea de proceso en acero Inoxidable Scribe/
+GALERIA/SCRIBE/Hidrapulper y línea de proceso en acero Inoxidable Scribe/*
+!/GALERIA/SCRIBE/Hidrapulper y línea de proceso en acero Inoxidable Scribe/18Hidrapulper y línea de proceso en acero Inoxidable Scribe.jpeg
+!/GALERIA/SCRIBE/Hidrapulper y línea de proceso en acero Inoxidable Scribe/22Hidrapulper y línea de proceso en acero Inoxidable Scribe.jpeg
+!/GALERIA/SCRIBE/Hidrapulper y línea de proceso en acero Inoxidable Scribe/39Hidrapulper y línea de proceso en acero Inoxidable Scribe.jpeg
+!/GALERIA/SCRIBE/Hidrapulper y línea de proceso en acero Inoxidable Scribe/58Hidrapulper y línea de proceso en acero Inoxidable Scribe.jpeg
+
+!/GALERIA/NESTLE/
+GALERIA/NESTLE/*
+!/GALERIA/NESTLE/NESTLE_2.jpeg
+
+!/GALERIA/MRO-OMEGA/
+GALERIA/MRO-OMEGA/*
+!/GALERIA/MRO-OMEGA/COLOCACION DE TABLERO/
+GALERIA/MRO-OMEGA/COLOCACION DE TABLERO/*
+!/GALERIA/MRO-OMEGA/COLOCACION DE TABLERO/COLOCACION DE TABLERO_65.jpeg
+
+!/GALERIA/SeccElectrica/
+GALERIA/SeccElectrica/*
+!/GALERIA/SeccElectrica/SeccElectrica_1.JPG
+!/GALERIA/SeccElectrica/San agustín/
+GALERIA/SeccElectrica/San agustín/*
+!/GALERIA/SeccElectrica/San agustín/San agustín_8.JPG
+!/GALERIA/SeccElectrica/San agustín/San agustin9_web.jpg
+!/GALERIA/SeccElectrica/San agustín/San agustín_12.jpg
+
+# ------------------------------------------------------------------------------
+# 4. Ignorar archivos temporales y de sistema
+# ------------------------------------------------------------------------------
+*.tmp
+~$*
+desktop.ini
+thumbs.db
+.DS_Store
